@@ -64,6 +64,9 @@ Bash
   terraform apply
 Type yes when prompted to confirm.
 
+![image](https://github.com/user-attachments/assets/11435e1f-90bb-43e8-ac56-a1ce1aa6d0d3)
+
+
 Important: Note down the aws_s3_bucket.app_bucket.id (your S3 bucket name) from the Terraform output. This is crucial for the next step. Also, note the aws_instance.global_energy_app.public_ip or aws_instance.global_energy_app.public_dns for SSH/VNC connection later.
 
 Upload Application Files to S3 Bucket:
@@ -99,6 +102,9 @@ Bash
 Replace PATH_TO_YOUR_KEY.pem (e.g., "C:\Users\YourUser\Downloads\global-energy-app-key.pem") and YOUR_EC2_PUBLIC_IP (e.g., 54.123.45.67).
 
 Type yes if prompted to confirm authenticity.
+
+![image](https://github.com/user-attachments/assets/c4dbb82c-b35e-4b67-b035-94597593741f)
+
 
 Verify Application Files (Optional, but good check):
 
@@ -220,6 +226,9 @@ pip3 install reportlab PyPDF2 google-generativeai pycryptodome
 Then retry python3 app.py.
 
 Your Python Tkinter GUI application should now be running in the VNC session!
+
+![image](https://github.com/user-attachments/assets/83686027-6699-4681-bdc4-02ae10131ca7)
+
 
 Phase 5: Cleanup (Important!)
 To avoid unexpected AWS charges, remember to destroy your infrastructure when you are finished using it.
