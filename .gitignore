@@ -1,0 +1,22 @@
+# Terraform state files
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# SSH Keys
+*.pem
+*.cer
+*.pub
+
+# Sensitive Application Files
+encrypted_key.txt
+# If you have any other sensitive files, list them here.
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# VNC related logs
+.vnc/
+*.log
+*.pid
